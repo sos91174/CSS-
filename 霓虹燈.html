@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Neon</title>
+
+	<style>
+		/**{
+			margin: 0;
+			padding: 0;
+		}*/
+		body{
+			background-color: #000;
+		}
+		.neon-wrap{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+		}
+		.neon-wrap span{
+			display: block;
+		}
+		.neon-text{
+			font-family: 'Monoton', cursive;
+			font-size: 150px;
+			/*color: #e91e63;
+			text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63;*/
+			animation: neon 1s infinite;
+			
+		}
+		.neon-by{
+			color: #e91e63;
+			text-shadow: -3px 0px 5px #e91e63, 0px 0px 2px #e91e63;
+			font-size: 30px;
+		}
+		@keyframes neon{
+			0%, 30%, 32%, 34%{
+				color: #222;
+				text-shadow: -3px 0px 5px #222,0px 0px 2px #222;
+			}
+		31%, 33%, 35%, 100% {
+				color: #e91e63;
+				text-shadow: -3px 0px 5px #e91e63,0px 0px 2px #e91e63;
+		}
+	</style>
+
+
+</head>
+<body>
+	<div class="neon-wrap">
+		<span class="neon-text">CSS</span>
+		<span class="neon-by">by Justin</span>
+			
+		
+		
+	</div>
+</body>
+</html>
